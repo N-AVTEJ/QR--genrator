@@ -2,7 +2,8 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { CustomizationOptions, SIZE_DISPLAY_MAP } from '@/types/qr';
+import { CustomizationOptions } from '@/types/qr';
+import { SIZE_DISPLAY_MAP } from '@/lib/qr-utils';
 import { QrCode, Download, Copy, RefreshCw, FileCode, Check } from 'lucide-react';
 
 interface QRPreviewProps {
