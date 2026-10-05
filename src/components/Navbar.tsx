@@ -89,7 +89,7 @@ export function Navbar({ onFocusInput }: NavbarProps) {
             className="flex items-center gap-2 px-3 py-1.5 text-xs font-medium rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/80 text-slate-700 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white hover:border-slate-300 dark:hover:border-slate-700 transition-colors shadow-xs"
             aria-label="View on GitHub"
           >
-            <Github className="w-3.5 h-3.5" />
+            <GithubIcon className="w-3.5 h-3.5" />
             <span>GitHub</span>
           </a>
 
@@ -145,7 +145,7 @@ export function Navbar({ onFocusInput }: NavbarProps) {
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 w-full py-2 rounded-lg border border-slate-200 dark:border-slate-800 text-xs font-medium text-slate-700 dark:text-slate-300"
             >
-              <Github className="w-4 h-4" />
+              <GithubIcon className="w-4 h-4" />
               <span>GitHub Repository</span>
             </a>
           </div>
