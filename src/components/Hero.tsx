@@ -31,19 +31,19 @@ export function Hero() {
         Generate clean, high-quality QR codes from URLs, text, contact information, and more — instantly.
       </p>
 
-      {/* Quick reassurance pills */}
-      <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-xs font-medium text-slate-500 dark:text-slate-400">
-        <span className="flex items-center gap-1.5">
+      {/* Reassurance Badges */}
+      <div className="mt-6 flex flex-wrap items-center justify-center gap-2.5 text-xs font-medium text-slate-600 dark:text-slate-300">
+        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 dark:bg-slate-800/80 border border-slate-200/80 dark:border-slate-700/60">
           <ShieldCheck className="w-3.5 h-3.5 text-emerald-500" />
-          100% Client-side privacy
+          Client-side privacy
         </span>
-        <span className="hidden sm:inline">•</span>
-        <span className="flex items-center gap-1.5">
+        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 dark:bg-slate-800/80 border border-slate-200/80 dark:border-slate-700/60">
           <Sparkles className="w-3.5 h-3.5 text-blue-500" />
-          High-res PNG & SVG downloads
+          PNG & SVG export
         </span>
-        <span className="hidden sm:inline">•</span>
-        <span>Zero tracking or cookies</span>
+        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 dark:bg-slate-800/80 border border-slate-200/80 dark:border-slate-700/60">
+          Zero tracking cookies
+        </span>
       </div>
     </section>
   );
