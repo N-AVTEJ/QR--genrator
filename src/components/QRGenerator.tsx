@@ -312,7 +312,6 @@ export function QRGenerator({ onHistoryChange, generatorRef }: QRGeneratorProps)
                     <Sparkles className="w-4 h-4 transition-transform group-hover:scale-110" />
                   )}
                   <span>{isGenerating ? 'Generating QR Code...' : 'Generate QR'}</span>
-                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </button>
               </div>
             </div>
