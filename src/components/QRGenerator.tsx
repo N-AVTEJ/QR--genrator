@@ -24,7 +24,7 @@ import { QRTypeSelector } from './QRTypeSelector';
 import { QRInput } from './QRInput';
 import { QRCustomizer } from './QRCustomizer';
 import { QRPreview } from './QRPreview';
-import { Sparkles, Loader2, ArrowRight } from 'lucide-react';
+import { Sparkles, Loader2 } from 'lucide-react';
 
 interface QRGeneratorProps {
   onHistoryChange?: () => void;
