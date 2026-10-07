@@ -5,32 +5,32 @@ import { Zap, ShieldCheck, CheckCircle2, Sliders } from 'lucide-react';
 
 const FEATURES = [
   {
-    step: '01',
+    id: 'instant',
     title: 'Instant Generation',
-    desc: 'Generate QR codes in seconds with no unnecessary setup.',
+    desc: 'Generate QR codes in seconds with no unnecessary setup or delays.',
     icon: Zap,
-    badge: 'Real-time',
+    tag: 'Zero Latency',
   },
   {
-    step: '02',
+    id: 'privacy',
     title: 'Privacy First',
-    desc: 'Your QR content stays in your browser.',
+    desc: 'Your QR content stays strictly in your browser. No server transmission.',
     icon: ShieldCheck,
-    badge: '100% Local',
+    tag: 'Client-Only',
   },
   {
-    step: '03',
+    id: 'quality',
     title: 'High Quality',
-    desc: 'Download crisp QR codes optimized for scanning.',
+    desc: 'Download crisp vector SVGs or print-ready 1024px PNGs with precise quiet zones.',
     icon: CheckCircle2,
-    badge: 'PNG & SVG',
+    tag: 'Vector & PNG',
   },
   {
-    step: '04',
+    id: 'custom',
     title: 'Customizable',
-    desc: 'Adjust size, colors, and spacing to match your needs.',
+    desc: 'Adjust size, colors, margin, and error-correction level with live contrast feedback.',
     icon: Sliders,
-    badge: 'Precision',
+    tag: 'Precision Matrix',
   },
 ];
 
@@ -54,21 +54,17 @@ export function FeatureSection() {
           const Icon = f.icon;
           return (
             <div
-              key={f.step}
+              key={f.id}
               className="group relative p-6 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800 hover:border-blue-500/40 dark:hover:border-blue-500/40 transition-all duration-300 shadow-xs hover:shadow-lg flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-wider">
-                    {f.step}
+                  <div className="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400 flex items-center justify-center transition-transform group-hover:scale-105">
+                    <Icon className="w-5 h-5" />
+                  </div>
+                  <span className="text-[11px] font-mono font-medium px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+                    {f.tag}
                   </span>
-                  <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">
-                    {f.badge}
-                  </span>
-                </div>
-
-                <div className="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-4 transition-transform group-hover:scale-110">
-                  <Icon className="w-5 h-5" />
                 </div>
 
                 <h3 className="text-base font-bold text-slate-900 dark:text-white">
